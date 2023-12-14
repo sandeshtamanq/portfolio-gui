@@ -1,10 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
-import ProjectCard from "./ProjectCards";
+import { Col, Container, Row } from "react-bootstrap";
+import ecommerce from "../../Assets/Projects/ecommerce.png";
 import portfolioCli from "../../Assets/Projects/portfolio-cli.png";
 import portfolioGui from "../../Assets/Projects/portfolio-gui.png";
-import ecommerce from "../../Assets/Projects/ecommerce.png";
+import todo from "../../Assets/Projects/todo.png";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import ProjectCard from "./ProjectCards";
 import "./project.css";
 
 function Projects() {
@@ -42,6 +43,15 @@ function Projects() {
               description="This is a fully functional eCommerce website that uses React.js + Tailwind and redux-toolkit in the front end and nestjs and typeorm in backend and PostgresSql as Database."
               ghLink="https://github.com/sandeshtamanq/7thsem-project_backend"
               demoLink="https://7th-sem-project-frontend.vercel.app/"
+            />
+          </Col>
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={todo}
+              title="To do"
+              description="This is a fully functional todo website made using nodejs, react, postgres and typeorm"
+              ghLink="https://github.com/sandeshtamanq/frontend"
+              demoLink="https://frontend-self-delta.vercel.app/"
             />
           </Col>
         </Row>
